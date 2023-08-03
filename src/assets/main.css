@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+ @apply container mx-auto px-4 pb-4 pt-8;
+}
+body:has( nav.not-collapsed ) {
+ @apply overflow-y-hidden before:!absolute before:!inset-0 before:!bg-black/50
+}
